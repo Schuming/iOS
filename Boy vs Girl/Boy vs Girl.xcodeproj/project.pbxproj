@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA4A5BA71C1AF4D000443534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A5BA61C1AF4D000443534 /* AppDelegate.swift */; };
+		BA4A5BA91C1AF4D000443534 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A5BA81C1AF4D000443534 /* ViewController.swift */; };
+		BA4A5BAC1C1AF4D000443534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4A5BAA1C1AF4D000443534 /* Main.storyboard */; };
+		BA4A5BAE1C1AF4D000443534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA4A5BAD1C1AF4D000443534 /* Assets.xcassets */; };
+		BA4A5BB11C1AF4D000443534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4A5BAF1C1AF4D000443534 /* LaunchScreen.storyboard */; };
+		BA4A5BBC1C1AF4D000443534 /* Boy_vs_GirlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A5BBB1C1AF4D000443534 /* Boy_vs_GirlTests.swift */; };
+		BA4A5BC71C1AF4D000443534 /* Boy_vs_GirlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A5BC61C1AF4D000443534 /* Boy_vs_GirlUITests.swift */; };
+		BA4A5BD81C1AF6C200443534 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4A5BD41C1AF6C200443534 /* background.png */; };
+		BA4A5BD91C1AF6C200443534 /* boy.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4A5BD51C1AF6C200443534 /* boy.png */; };
+		BA4A5BDA1C1AF6C200443534 /* girl.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4A5BD61C1AF6C200443534 /* girl.png */; };
+		BA4A5BDB1C1AF6C200443534 /* win.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4A5BD71C1AF6C200443534 /* win.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA4A5BB81C1AF4D000443534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA4A5B9B1C1AF4D000443534 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA4A5BA21C1AF4D000443534;
+			remoteInfo = "Boy vs Girl";
+		};
+		BA4A5BC31C1AF4D000443534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA4A5B9B1C1AF4D000443534 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA4A5BA21C1AF4D000443534;
+			remoteInfo = "Boy vs Girl";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA4A5BA31C1AF4D000443534 /* Boy vs Girl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boy vs Girl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4A5BA61C1AF4D000443534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA4A5BA81C1AF4D000443534 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA4A5BAB1C1AF4D000443534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA4A5BAD1C1AF4D000443534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA4A5BB01C1AF4D000443534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA4A5BB21C1AF4D000443534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA4A5BB71C1AF4D000443534 /* Boy vs GirlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Boy vs GirlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4A5BBB1C1AF4D000443534 /* Boy_vs_GirlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boy_vs_GirlTests.swift; sourceTree = "<group>"; };
+		BA4A5BBD1C1AF4D000443534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA4A5BC21C1AF4D000443534 /* Boy vs GirlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Boy vs GirlUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4A5BC61C1AF4D000443534 /* Boy_vs_GirlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boy_vs_GirlUITests.swift; sourceTree = "<group>"; };
+		BA4A5BC81C1AF4D000443534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA4A5BD41C1AF6C200443534 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		BA4A5BD51C1AF6C200443534 /* boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boy.png; sourceTree = "<group>"; };
+		BA4A5BD61C1AF6C200443534 /* girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl.png; sourceTree = "<group>"; };
+		BA4A5BD71C1AF6C200443534 /* win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA4A5BA01C1AF4D000443534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4A5BB41C1AF4D000443534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4A5BBF1C1AF4D000443534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA4A5B9A1C1AF4D000443534 = {
+			isa = PBXGroup;
+			children = (
+				BA4A5BA51C1AF4D000443534 /* Boy vs Girl */,
+				BA4A5BBA1C1AF4D000443534 /* Boy vs GirlTests */,
+				BA4A5BC51C1AF4D000443534 /* Boy vs GirlUITests */,
+				BA4A5BA41C1AF4D000443534 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA4A5BA41C1AF4D000443534 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA4A5BA31C1AF4D000443534 /* Boy vs Girl.app */,
+				BA4A5BB71C1AF4D000443534 /* Boy vs GirlTests.xctest */,
+				BA4A5BC21C1AF4D000443534 /* Boy vs GirlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA4A5BA51C1AF4D000443534 /* Boy vs Girl */ = {
+			isa = PBXGroup;
+			children = (
+				BA4A5BA61C1AF4D000443534 /* AppDelegate.swift */,
+				BA4A5BA81C1AF4D000443534 /* ViewController.swift */,
+				BA4A5BD41C1AF6C200443534 /* background.png */,
+				BA4A5BD51C1AF6C200443534 /* boy.png */,
+				BA4A5BD61C1AF6C200443534 /* girl.png */,
+				BA4A5BD71C1AF6C200443534 /* win.png */,
+				BA4A5BAA1C1AF4D000443534 /* Main.storyboard */,
+				BA4A5BAD1C1AF4D000443534 /* Assets.xcassets */,
+				BA4A5BAF1C1AF4D000443534 /* LaunchScreen.storyboard */,
+				BA4A5BB21C1AF4D000443534 /* Info.plist */,
+			);
+			path = "Boy vs Girl";
+			sourceTree = "<group>";
+		};
+		BA4A5BBA1C1AF4D000443534 /* Boy vs GirlTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA4A5BBB1C1AF4D000443534 /* Boy_vs_GirlTests.swift */,
+				BA4A5BBD1C1AF4D000443534 /* Info.plist */,
+			);
+			path = "Boy vs GirlTests";
+			sourceTree = "<group>";
+		};
+		BA4A5BC51C1AF4D000443534 /* Boy vs GirlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA4A5BC61C1AF4D000443534 /* Boy_vs_GirlUITests.swift */,
+				BA4A5BC81C1AF4D000443534 /* Info.plist */,
+			);
+			path = "Boy vs GirlUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA4A5BA21C1AF4D000443534 /* Boy vs Girl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA4A5BCB1C1AF4D000443534 /* Build configuration list for PBXNativeTarget "Boy vs Girl" */;
+			buildPhases = (
+				BA4A5B9F1C1AF4D000443534 /* Sources */,
+				BA4A5BA01C1AF4D000443534 /* Frameworks */,
+				BA4A5BA11C1AF4D000443534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Boy vs Girl";
+			productName = "Boy vs Girl";
+			productReference = BA4A5BA31C1AF4D000443534 /* Boy vs Girl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA4A5BB61C1AF4D000443534 /* Boy vs GirlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA4A5BCE1C1AF4D000443534 /* Build configuration list for PBXNativeTarget "Boy vs GirlTests" */;
+			buildPhases = (
+				BA4A5BB31C1AF4D000443534 /* Sources */,
+				BA4A5BB41C1AF4D000443534 /* Frameworks */,
+				BA4A5BB51C1AF4D000443534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA4A5BB91C1AF4D000443534 /* PBXTargetDependency */,
+			);
+			name = "Boy vs GirlTests";
+			productName = "Boy vs GirlTests";
+			productReference = BA4A5BB71C1AF4D000443534 /* Boy vs GirlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA4A5BC11C1AF4D000443534 /* Boy vs GirlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA4A5BD11C1AF4D000443534 /* Build configuration list for PBXNativeTarget "Boy vs GirlUITests" */;
+			buildPhases = (
+				BA4A5BBE1C1AF4D000443534 /* Sources */,
+				BA4A5BBF1C1AF4D000443534 /* Frameworks */,
+				BA4A5BC01C1AF4D000443534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA4A5BC41C1AF4D000443534 /* PBXTargetDependency */,
+			);
+			name = "Boy vs GirlUITests";
+			productName = "Boy vs GirlUITests";
+			productReference = BA4A5BC21C1AF4D000443534 /* Boy vs GirlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA4A5B9B1C1AF4D000443534 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Schuming;
+				TargetAttributes = {
+					BA4A5BA21C1AF4D000443534 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					BA4A5BB61C1AF4D000443534 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = BA4A5BA21C1AF4D000443534;
+					};
+					BA4A5BC11C1AF4D000443534 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = BA4A5BA21C1AF4D000443534;
+					};
+				};
+			};
+			buildConfigurationList = BA4A5B9E1C1AF4D000443534 /* Build configuration list for PBXProject "Boy vs Girl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA4A5B9A1C1AF4D000443534;
+			productRefGroup = BA4A5BA41C1AF4D000443534 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA4A5BA21C1AF4D000443534 /* Boy vs Girl */,
+				BA4A5BB61C1AF4D000443534 /* Boy vs GirlTests */,
+				BA4A5BC11C1AF4D000443534 /* Boy vs GirlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA4A5BA11C1AF4D000443534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4A5BB11C1AF4D000443534 /* LaunchScreen.storyboard in Resources */,
+				BA4A5BD91C1AF6C200443534 /* boy.png in Resources */,
+				BA4A5BD81C1AF6C200443534 /* background.png in Resources */,
+				BA4A5BDB1C1AF6C200443534 /* win.png in Resources */,
+				BA4A5BAE1C1AF4D000443534 /* Assets.xcassets in Resources */,
+				BA4A5BAC1C1AF4D000443534 /* Main.storyboard in Resources */,
+				BA4A5BDA1C1AF6C200443534 /* girl.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4A5BB51C1AF4D000443534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4A5BC01C1AF4D000443534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA4A5B9F1C1AF4D000443534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4A5BA91C1AF4D000443534 /* ViewController.swift in Sources */,
+				BA4A5BA71C1AF4D000443534 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4A5BB31C1AF4D000443534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4A5BBC1C1AF4D000443534 /* Boy_vs_GirlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4A5BBE1C1AF4D000443534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4A5BC71C1AF4D000443534 /* Boy_vs_GirlUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA4A5BB91C1AF4D000443534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA4A5BA21C1AF4D000443534 /* Boy vs Girl */;
+			targetProxy = BA4A5BB81C1AF4D000443534 /* PBXContainerItemProxy */;
+		};
+		BA4A5BC41C1AF4D000443534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA4A5BA21C1AF4D000443534 /* Boy vs Girl */;
+			targetProxy = BA4A5BC31C1AF4D000443534 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA4A5BAA1C1AF4D000443534 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA4A5BAB1C1AF4D000443534 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA4A5BAF1C1AF4D000443534 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA4A5BB01C1AF4D000443534 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA4A5BC91C1AF4D000443534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA4A5BCA1C1AF4D000443534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA4A5BCC1C1AF4D000443534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Boy vs Girl/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Schuming.Boy-vs-Girl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA4A5BCD1C1AF4D000443534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Boy vs Girl/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Schuming.Boy-vs-Girl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BA4A5BCF1C1AF4D000443534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Boy vs GirlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Schuming.Boy-vs-GirlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boy vs Girl.app/Boy vs Girl";
+			};
+			name = Debug;
+		};
+		BA4A5BD01C1AF4D000443534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Boy vs GirlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Schuming.Boy-vs-GirlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boy vs Girl.app/Boy vs Girl";
+			};
+			name = Release;
+		};
+		BA4A5BD21C1AF4D000443534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Boy vs GirlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Schuming.Boy-vs-GirlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Boy vs Girl";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BA4A5BD31C1AF4D000443534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Boy vs GirlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Schuming.Boy-vs-GirlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Boy vs Girl";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA4A5B9E1C1AF4D000443534 /* Build configuration list for PBXProject "Boy vs Girl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA4A5BC91C1AF4D000443534 /* Debug */,
+				BA4A5BCA1C1AF4D000443534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA4A5BCB1C1AF4D000443534 /* Build configuration list for PBXNativeTarget "Boy vs Girl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA4A5BCC1C1AF4D000443534 /* Debug */,
+				BA4A5BCD1C1AF4D000443534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA4A5BCE1C1AF4D000443534 /* Build configuration list for PBXNativeTarget "Boy vs GirlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA4A5BCF1C1AF4D000443534 /* Debug */,
+				BA4A5BD01C1AF4D000443534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA4A5BD11C1AF4D000443534 /* Build configuration list for PBXNativeTarget "Boy vs GirlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA4A5BD21C1AF4D000443534 /* Debug */,
+				BA4A5BD31C1AF4D000443534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA4A5B9B1C1AF4D000443534 /* Project object */;
+}
