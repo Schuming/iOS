@@ -34,7 +34,10 @@ class HandleItemTableViewController : UITableViewController,UITextFieldDelegate
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
     @IBOutlet weak var textField: UITextField!
     @IBAction func done(sender: AnyObject) {
-        itemToHandle = TodoItem(todoItemCheckStatus: false, todoItemName: textField.text!)
+        itemToHandle = TodoItem()
+        itemToHandle?._todoItemName = textField.text!
+        itemToHandle?._todoItemcheckStatus = false
+//            TodoItem(todoItemCheckStatus: false, todoItemName: textField.text!)
         if self.title == "Add Item" {
         
             delegate?.HandleItemViewController(self, didFinishAddingItem: itemToHandle!)
@@ -57,7 +60,7 @@ class HandleItemTableViewController : UITableViewController,UITextFieldDelegate
         
         textField.text = itemToHandle?._todoItemName
         
-        let lap = UITapGestureRecognizer(target: self, action: Selector("handleTap:")) //此处 “：”必须要加 否则程序crash,Selector可以不加
+        let lap = UITapGestureRecognizer(target: self, action: Selector("handleTap:")) //此处 “：”必须要加,不加的话后面recognizer参数无法传递进去
         self.view.addGestureRecognizer(lap)
         
         
