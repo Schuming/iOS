@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AllListsTableViewController: UITableViewController {
+class AllListsTableViewController: UITableViewController ,ListDetailViewControllerDelegate{
 
     var lists : [Checklist]
     
@@ -39,6 +39,8 @@ class AllListsTableViewController: UITableViewController {
 
     }
 
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -80,7 +82,45 @@ class AllListsTableViewController: UITableViewController {
             let controller = segue.destinationViewController as! TodoListTableViewController
             controller.checklist = sender as! Checklist
             
+        } else if segue.identifier == "AddChecklist" {
+            let navigationController = segue.destinationViewController as! UINavigationController
+            let controller = navigationController.topViewController as! ListDetailViewController
+            
+            controller.delegate = self
+            controller._checklist = nil
         }
     }
-
+    
+    func listDetailViewController(controller: ListDetailViewController, didFinishAddingCheckList checklist: Checklist) {
+        let newRowIndex = lists.count
+        lists.append(checklist)
+        
+        let indexPath = NSIndexPath(forRow: newRowIndex,inSection: 0)
+        let indexPaths = [indexPath]
+        tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func listDetailViewControllerDidCancel(controller: ListDetailViewController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func listDetailViewController(controller: ListDetailViewController, didFinishEdittingCheckList checklist: Checklist) {
+        if let index = lists.indexOf(checklist){
+            let indexPath = NSIndexPath(forRow: index, inSection: 0)
+            if let cell = tableView.cellForRowAtIndexPath(indexPath) {
+                cell.textLabel?.text = checklist.name
+            }
+        }
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        lists.removeAtIndex(indexPath.row)
+        
+        let indexPaths = [indexPath]
+        tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
+    }
+    
 }
