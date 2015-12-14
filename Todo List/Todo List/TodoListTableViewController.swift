@@ -6,12 +6,13 @@
 //  Copyright © 2015年 Schuming. All rights reserved.
 //
 
-// v2015121400
+// v2015121500
 
 import UIKit
 
 class TodoListTableViewController: UITableViewController ,HandleItemInTableViewDelegate{
     
+    var checklist : Checklist!
     var indexForItemToEdit = 0
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -120,6 +121,7 @@ class TodoListTableViewController: UITableViewController ,HandleItemInTableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        title = checklist.name
     }
     
     override func didReceiveMemoryWarning() {

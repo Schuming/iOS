@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fQ3-2H-Lo9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fQ3-2H-Lo9">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Todo List-->
+        <!--Name of the Checklist-->
         <scene sceneID="ZAQ-47-c3K">
             <objects>
                 <tableViewController id="moA-ea-5Zb" customClass="TodoListTableViewController" customModule="Todo_List" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="k5m-zS-4JJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="Item" id="EEo-Xw-HIf">
@@ -24,15 +23,12 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="√" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSB-wt-zSp">
                                             <rect key="frame" x="8" y="11" width="17" height="21"/>
-                                            <animations/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <animations/>
                                 </tableViewCellContentView>
-                                <animations/>
                                 <connections>
                                     <segue destination="oNv-3L-uuj" kind="presentation" identifier="EditItemSegue" trigger="accessoryAction" id="p6V-w1-YX5"/>
                                 </connections>
@@ -43,7 +39,7 @@
                             <outlet property="delegate" destination="moA-ea-5Zb" id="kJ2-g6-jk0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todo List" id="Lzn-zb-wXE">
+                    <navigationItem key="navigationItem" title="Name of the Checklist" id="Lzn-zb-wXE">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="cg8-IY-hs7">
                             <connections>
                                 <segue destination="oNv-3L-uuj" kind="presentation" identifier="AddItemSegue" id="MMd-qe-RK2"/>
@@ -56,6 +52,29 @@
             </objects>
             <point key="canvasLocation" x="1238" y="328"/>
         </scene>
+        <!--Checklists-->
+        <scene sceneID="ZCS-x3-c6e">
+            <objects>
+                <tableViewController id="oF8-IS-KXT" customClass="AllListsTableViewController" customModule="Todo_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="I7X-zs-3iw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="oF8-IS-KXT" id="tGS-3M-Sgo"/>
+                            <outlet property="delegate" destination="oF8-IS-KXT" id="Xn5-EF-XRz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Checklists" id="W2y-3x-FPM"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="moA-ea-5Zb" kind="show" identifier="ShowChecklist" id="Lc2-8q-aJz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZa-fM-M0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="328"/>
+        </scene>
         <!--Add Item-->
         <scene sceneID="PAH-Nw-11K">
             <objects>
@@ -63,8 +82,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="SoL-Fi-Fv9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="o60-qJ-QUW">
                                 <cells>
@@ -77,7 +95,6 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a todo item here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQU-JU-5cA">
                                                     <rect key="frame" x="8" y="8" width="398" height="30"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     <connections>
@@ -85,9 +102,7 @@
                                                     </connections>
                                                 </textField>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -119,25 +134,24 @@
             </objects>
             <point key="canvasLocation" x="2434" y="328"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Name of the Checklist-->
         <scene sceneID="sCq-YL-lEB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fQ3-2H-Lo9" sceneMemberID="viewController">
+                <navigationController title="Name of the Checklist" automaticallyAdjustsScrollViewInsets="NO" id="fQ3-2H-Lo9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ALO-4r-akl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="moA-ea-5Zb" kind="relationship" relationship="rootViewController" id="Pit-iT-7c5"/>
+                        <segue destination="oF8-IS-KXT" kind="relationship" relationship="rootViewController" id="YWc-rh-Fqx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tN1-T5-qme" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="674" y="328"/>
+            <point key="canvasLocation" x="246" y="328"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qth-t8-MIB">
@@ -147,7 +161,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="N4b-Ld-z1r">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
