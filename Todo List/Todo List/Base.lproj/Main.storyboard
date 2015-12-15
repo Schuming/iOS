@@ -120,7 +120,7 @@
         <!--Navigation Controller-->
         <scene sceneID="zSa-bU-zJE">
             <objects>
-                <navigationController id="wA2-f5-wWp" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ListDetailNavigationController" id="wA2-f5-wWp" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="arj-1J-AMu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
