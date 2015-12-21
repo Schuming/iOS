@@ -51,6 +51,7 @@ class CurrLocationViewController: UIViewController ,CLLocationManagerDelegate{
         updateLabels()
         configureGetButton()
         
+        
     }
     
     
